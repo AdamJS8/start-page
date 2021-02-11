@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html class="bgi-night-town">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://gitcdn.xyz/cdn/cobwebdev/cssheet/dev/css/cssheet.css">
+        <title id="title-greeting">Adam</title>
+    </head>
+
+    <body class="bg-black-op ht-100 ft-arial" onload="myFunction()">
+
+    <center>
+        <div class="wd-75 fg-white ta-center op-10">
+          <h1 class="fs-7"><span id="h1-greeting"></span></h1>
+          <p class="fs-2">The date and time is: <span id="datetime"></span></p>
+
+          <div class="row fg-white">
+              <div class="cl wd-25">
+                  <a href="https://reddit.com" class="fg-white bds-solid fs-3 bdr-curved oh-07 op-10 td-none">Reddit</a>
+              </div>
+              <div class="cl wd-25">
+                  <a href="https://youtube.com" class="fg-white bds-solid fs-3 bdr-curved oh-07 op-10 td-none">Youtube</a>
+                </div>
+              <div class="cl wd-25">
+                  <a href="https://twitter.com" class="fg-white bds-solid fs-3 bdr-curved oh-07 op-10 td-none">Twitter</a>
+              </div>
+          </div>
+          <br><br>
+          <div class="row fg-white">
+              <div class="cl wd-25">
+                  <a href="https://web.whatsapp.com" class="fg-white bds-solid fs-3 bdr-curved oh-07 op-10 td-none">Whatsapp</a>
+              </div>
+              <div class="cl wd-25">
+                  <a href="https://github.com" class="fg-white bds-solid fs-3 bdr-curved oh-07 op-10 td-none">GitHub</a>
+                </div>
+              <div class="cl wd-25">
+                  <a href="https://amazon.co.uk" class="fg-white bds-solid fs-3 bdr-curved oh-07 op-10 td-none">Amazon</a>
+              </div>
+          </div>
+
+        </div>
+
+
+    </center>
+
+    <script>
+function myFunction() {
+  var greeting;
+  var time = new Date().getHours();
+  if (time < 12) {
+    greeting = "Good Morning, Adam";
+  } else if (time < 20) {
+    greeting = "Good Afternoon, Adam";
+  } else {
+    greeting = "Good Evening, Adam";
+  }
+  document.getElementById("title-greeting").innerHTML = greeting;
+  document.getElementById("h1-greeting").innerHTML = greeting;
+}
+</script>
+
+    <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleString();
+    </script>
+
+  </body>
+</html>
